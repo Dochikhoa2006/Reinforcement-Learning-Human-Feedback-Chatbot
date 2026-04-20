@@ -1,0 +1,16 @@
+__pycache__/
+*.DS_Store
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.vscode/
+
+*.pkl
+*.xlsx
+*.parquet
+*.log
+
+crontab.py

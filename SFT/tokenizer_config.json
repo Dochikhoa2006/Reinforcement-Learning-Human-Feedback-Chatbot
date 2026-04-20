@@ -1,0 +1,14 @@
+{
+  "add_prefix_space": false,
+  "backend": "tokenizers",
+  "bos_token": "[BOS]",
+  "cls_token": "[CLS]",
+  "eos_token": "<|endoftext|>",
+  "errors": "replace",
+  "is_local": false,
+  "model_max_length": 1024,
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]",
+  "tokenizer_class": "GPT2Tokenizer",
+  "unk_token": "<|endoftext|>"
+}
