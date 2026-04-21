@@ -6,16 +6,9 @@
   "eos_token": "<|endoftext|>",
   "errors": "replace",
   "is_local": true,
-  "max_length": 511,
   "model_max_length": 1024,
-  "pad_to_multiple_of": null,
   "pad_token": "[PAD]",
-  "pad_token_type_id": 0,
-  "padding_side": "left",
   "sep_token": "[SEP]",
-  "stride": 0,
   "tokenizer_class": "GPT2Tokenizer",
-  "truncation_side": "right",
-  "truncation_strategy": "longest_first",
   "unk_token": "<|endoftext|>"
 }

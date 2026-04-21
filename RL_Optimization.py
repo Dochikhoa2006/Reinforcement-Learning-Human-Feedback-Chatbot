@@ -18,7 +18,7 @@ class Proximal_Policy_Optimization :
         self.SFT = SFT_using_GPT_2 ()
         self.RM = Reward_Modeling_using_RoBBERTa ()
 
-        self.SFT.load_model ('RL')
+        self.SFT.load_model ('SFT')
         self.RM.load_model ()
 
     def prepare_for_evaluate (self, Prompt, Answer):
@@ -56,9 +56,9 @@ class Proximal_Policy_Optimization :
     def train_model (self, file, optimizer, loss_func_value_head):
         
         batch_size = 1
-        mini_iteration = 8
+        mini_iteration = 4
         epsilon = 0.2
-        beta = 0.05
+        beta = 5e-3
 
         file_pandas = file.select ('prompt').toPandas ()
         file_modified = file_pandas.values.tolist ()
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 
     model = Proximal_Policy_Optimization ()
 
-    optimizer = optim.Adam (model.SFT.parameters (), lr = 5e-5)
+    optimizer = optim.Adam (model.SFT.parameters (), lr = 5e-6)
     loss_func_value_head = nn.MSELoss ()
 
     model.train_model (dataset, optimizer, loss_func_value_head)

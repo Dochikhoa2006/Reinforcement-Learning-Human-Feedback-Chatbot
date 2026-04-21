@@ -178,7 +178,7 @@ class SFT_using_GPT_2 (nn.Module):
                     answer_ids.append (predicted_token_id.item ())
                     tokenized_user_question_ids = torch.concat ([tokenized_user_question_ids, predicted_token_id], dim = 1)
 
-                if tokenized_user_question_ids.size (1) >= 510:
+                if tokenized_user_question_ids.size (1) >= 1022:
                     break
                 if predicted_token_id.item () == self.tokenizer.eos_token_id or predicted_token_id.item () == self.tokenizer.sep_token_id:
                     break

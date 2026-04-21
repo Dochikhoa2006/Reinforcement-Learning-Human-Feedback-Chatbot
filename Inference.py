@@ -38,7 +38,7 @@ if prompt:
 
 with st.sidebar:
     st.header ("Model Stats")
-    st.info ("Architecture: GPT-2 + PPO")
+    st.info ("Chatbot")
     if st.button ("Clear Chat"):
         st.rerun ()
 

@@ -12,7 +12,7 @@ The pipeline consists of three core stages:
 
 This project utilizes the **UltraFeedback Binarized** dataset, which contains pairs of "chosen" and "rejected" responses.
 
-* **Source:** [UltraFeedback Binarized Preferences](https://huggingface.co/datasets/argilla/ultrafeedback-binarized-preferences-cleaned)
+* **Sources:** [UltraFeedback Binarized Preferences](https://huggingface.co/datasets/argilla/ultrafeedback-binarized-preferences-cleaned), [Alpaca Data Cleaned](https://huggingface.co/datasets/yahma/alpaca-cleaned)
 * **Processing:** Handled via **PySpark** for efficient Parquet data loading and transformation.
 * **Evaluation Metrics:** Win Rate (LLM Judge), Reward Scores (RoBERTa), and KL-Divergence stability.
 
