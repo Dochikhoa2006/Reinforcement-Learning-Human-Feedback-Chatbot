@@ -54,38 +54,21 @@ This project utilizes the **UltraFeedback Binarized** dataset, which contains pa
 * **Score Calibration**: Correlation analysis between the RoBERTa Reward Model and human preference labels.
 * **Loss Convergence**: Tracking Policy vs. Value loss to detect training divergence.
 
-## Installation & Setup
+## Set Up
 
-### Prerequisites
-* **Hardware**: Optimized for **Apple Silicon (MPS)** and NVIDIA GPU (CUDA).
-* **Environment**: Python 3.10+
-
-### Set Up
-
-1.  **Stage 1: Supervised Fine-Tuning:**
+1.  **Clone the Repository**:
     ```bash
-    python Supervised_Fine_Tuning.py
+    cd "Your Directory"
+    git clone https://github.com/Dochikhoa2006/Quora-Question-Pairs-Duplicate-Detection.git
     ```
 
-2.  **Stage 2: Reward Model Training:**
-    ```bash
-    python Reward_Modeling.py
-    ```
-
-3.  **Stage 3: RL Optimization (PPO):**
-    ```bash
-    python RL_Optimization.py
-    ```
-
-4.  **Visualization & Evaluation:**
-    ```bash
-    python Evaluation.py
-    ```
-
-5.  **Inference**:
-    * To interact with the trained agent via a web interface:
+2.  **Docker**:
+    * To build docker image:
         ```bash
-        streamlit run Inference.py
+        docker build -t rl-human-feedback .
+    * To run docker container:
+        ```bash
+        docker run -p 8501:8501 --name my-streamlit-app rl-human-feedback
         ```
 
 ## License
