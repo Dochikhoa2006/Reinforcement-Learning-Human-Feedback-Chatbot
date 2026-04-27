@@ -8,4 +8,4 @@ ENV PYTHONUNBUFFERED=1
 ENV PYSPARK_PYTHON=python3
 ENV STREAMLIT_SERVER_PORT=8501
 ENV STREAMLIT_SERVER_ADDRESS=0.0.0.0
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "Inference.py"]
