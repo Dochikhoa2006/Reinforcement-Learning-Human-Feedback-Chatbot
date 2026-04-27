@@ -121,12 +121,3 @@ if __name__ == '__main__':
 
     GPT2_record, GPT2_and_PPO_record, RoBERTa_score_track = evaluate (GPT2, GPT2_and_PPO, RoBERTa)
     plotting (GPT2_record, GPT2_and_PPO_record, RoBERTa_score_track)
-
-
-
-
-# cd '/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback'
-# /opt/homebrew/bin/python3.12 -m venv .venv
-# source .venv/bin/activate
-# pip install pandas openpyxl pyspark transformers torch openai matplotlib python-dotenv
-# python '/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback/Evaluation.py'

@@ -159,18 +159,3 @@ if __name__ == '__main__':
 
     model.train_model (dataset, optimizer, loss_func)
     model.save_model ()
-
-
-
-
-
-
-
-
-
-
-# cd '/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback'
-# /opt/homebrew/bin/python3.12 -m venv .venv
-# source .venv/bin/activate
-# pip install pyspark transformers torch
-# python '/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback/Reward_Modeling.py'
