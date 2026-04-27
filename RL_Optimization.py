@@ -8,7 +8,7 @@ import torch
 
 
 spark = SparkSession.builder.appName ('ReadParquet').getOrCreate ()
-dataset = spark.read.parquet ('/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback/ultra_feedback.parquet')
+dataset = spark.read.parquet ('ultra_feedback.parquet')
 
 
 class Proximal_Policy_Optimization :

@@ -11,7 +11,7 @@ load_dotenv ()
 openai_key = os.getenv ('OPENAI_API_KEY')
 client = OpenAI (api_key = openai_key)
 
-dataset = pd.read_excel ('/Users/chikhoado/Desktop/PROJECTS/RL Human Feedback/Prompt_Dataset.xlsx')
+dataset = pd.read_excel ('Prompt_Dataset.xlsx')
 prompt_dataset = dataset['Prompts'].values.tolist ()
 prompt_loader = DataLoader (dataset = prompt_dataset, batch_size = 1, shuffle = False)
 
