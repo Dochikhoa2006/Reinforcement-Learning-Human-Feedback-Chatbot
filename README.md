@@ -32,7 +32,7 @@ This project utilizes the **UltraFeedback Binarized** dataset, which contains pa
 |---|---|
 | `SFT` | Supervised Fine-Tuned model fine-tuned from GPT-2. |
 | `RM` | Reward Modeling model fine-tuned from RoBERTa. |
-| `RL` | Proximal Polocy Optimization of GPT-2 (actor netowrk) and RoBERTa (critic network). |
+| `RL` | Proximal Polocy Optimization of GPT-2 (actor network) and RoBERTa (critic network). |
 | `Supervised_Fine_Tuning.py` | Performs SFT on GPT-2. Includes custom heads and left-padding configurations. |
 | `Reward_Modeling.py` | Trains the RoBERTa reward model using **Margin Ranking Loss**. |
 | `RL_Optimization.py` | The main PPO trainer. Implements the advantage function and policy updates. |
