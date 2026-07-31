@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using this metadata."
+title: "RLHF Chatbot: GPT-2, RoBERTa, and PPO"
+type: software
+authors:
+  - family-names: "Do"
+    given-names: "Chi Khoa"
+repository-code: "https://github.com/Dochikhoa2006/Reinforcement-Learning-Human-Feedback-Chatbot"
+url: "https://github.com/Dochikhoa2006/Reinforcement-Learning-Human-Feedback-Chatbot"
+version: 1.0.0
+date-released: 2026-07-31
+license: CC-BY-4.0
+keywords:
+  - reinforcement learning from human feedback
+  - proximal policy optimization
+  - reward modeling
+  - GPT-2
+  - RoBERTa

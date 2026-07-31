@@ -1,0 +1,15 @@
+.git
+.github
+.venv
+__pycache__
+*.py[cod]
+.env
+.DS_Store
+.pytest_cache
+.ruff_cache
+archive
+data
+docs
+tests
+artifacts/models/sft
+artifacts/models/reward

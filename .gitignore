@@ -1,13 +1,32 @@
+# Python
 __pycache__/
-*.DS_Store
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and secrets
 .venv/
 .env
+.env.*
+!.env.example
 
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Local datasets and experiment state
+data/raw/*
+!data/raw/README.md
+data/evaluation/*
+!data/evaluation/README.md
 *.pkl
-*.xlsx
-*.parquet
 *.log
+outputs/
 
-crontab.py
-GPT2_RoBERTa_PPO_Architecture.pdf
-run_script
+# Preserved local experiments (not part of the maintained package)
+archive/
+.qodo/

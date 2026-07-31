@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/Dochikhoa2006/Reinforcement-Learning-Human-Feedback-Chatbot/discussions
+    about: Ask usage and research questions in GitHub Discussions.

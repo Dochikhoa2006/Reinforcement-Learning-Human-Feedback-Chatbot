@@ -1,8 +1,3 @@
-torch
-transformers
-pyspark
-openai
-python-dotenv
-matplotlib
-pandas
-streamlit
+# Compatibility install for notebooks and simple environments.
+# For development, prefer: pip install -e ".[all,dev]"
+-e .[all]
